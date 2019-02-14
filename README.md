@@ -42,7 +42,7 @@ of working in log space.
 ```
 1.Logspace Multiplication [5 pts]
 Complete logProd=function(x) which takes as input a vector of numbers in logspace (i.e., xi = log pi),
-and returns the product of these numbers in logspace – i.e.,logProd(x)= log∏_ipi.
+and returns the product of these numbers in logspace – i.e.,logProd(x)= ![log∏_i p_i].
 
 2.Logspace Addition [5 pts]
 Complete logSum=function(x) which takes as input a vector of numbers in logspace (i.e., xi = log pi),
