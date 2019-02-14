@@ -1,0 +1,20 @@
+Naive Bayes Classifier 
+Accuracy is =  83.486 %
+Precision for class 1 =  95.122 %
+Precision for class 5 =  87.5 %
+Recall for class 1 =  97.5 %
+Recall for class 5 =  77.778 %
+
+Logistic Regression Classifier 
+Accuracy is =  95.413 %
+Precision for class 0 =  95.714 %
+Precision for class 1 =  94.872 %
+Recall for class 0 =  97.101 %
+Recall for class 1 =  92.5 %
+
+Naive Bayes Classifier for 2 Class Case 
+Accuracy is =  97.248 %
+Precision for class 0 =  95.833 %
+Precision for class 1 =  100 %
+Recall for class 0 =  100 %
+Recall for class 1=  92.5 %
