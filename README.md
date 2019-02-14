@@ -7,14 +7,7 @@ In this project you will code up two of the classification algorithms covered in
 Regression. The framework code for this question can be downloaded from CANVAS.
 ```
 - Programming Language: You must write your code in R.
-- Submission Instructions: For each sub-question you will be given a single function signature. You will
-    be asked to write a single R function which satisfies the signature. In the framework code, we have
-    provided you with a R script for the functions you need to complete. Do not change the structure of the file.
-    Complete each of these functions, and compress the code and the results files, evaluation.txt as a .tar file
-    and submit it to Canvas.You may submit it multiple times. Each submission will overwrite the previous
-    submission. Only the last submission before the deadline will be graded.
-- **Presentation slides:** Make slides to summarize your results. You do not need submit the slides, but I will
-    randomly draw a couple of groups to present their slides in class.
+
 - SUBMISSION CHECKLIST
     - Submission executes in less than 20 minutes.
     - Submission is smaller than 100K.
@@ -42,40 +35,34 @@ of working in log space.
 ```
 1.Logspace Multiplication [5 pts]
 Complete logProd=function(x) which takes as input a vector of numbers in logspace (i.e., xi = log pi),
-and returns the product of these numbers in logspace – i.e.,logProd(x)= ![log∏_i p_i].
+and returns the product of these numbers in logspace – i.e.,logProd(x)= log∏_i pi.
 
 2.Logspace Addition [5 pts]
 Complete logSum=function(x) which takes as input a vector of numbers in logspace (i.e., xi = log pi),
-and returns the sum of these numbers in logspace – i.e.,logSum(x)= log
+and returns the sum of these numbers in logspace – i.e.,logSum(x)= log ∑_i pi.
 ```
-### ∑
-
-```
-ipi.
-```
-### 1
 
 
 ## 2 Gaussian Naive Bayes [25 pts]
 
+You will implement the Gaussian Naive Bayes Classification∏ algorithm. As a reminder, in the Naive Bayes algorithm we calculate p(c|f) ∝ p(f|c)p(c) = p(c) (^) i p(fi|c). In Gaussian Naive Bayes, we learn a one-dimensional Gaussian for each feature in each class, i .e. p(fi|c) = N(fi; μi,c, σ^2 i,c), where μi,c is the mean of feature fi for those instances in class c, and σi,c^2 is the variance of feature fi for instances in class c. You can ( and should) test your implementation locally using the x Train and y Train data provided.
 ```
-We will download the Ecoli dataset from CANVAS and load it using R command in Project1.R file.
-You will implement the Gaussian Naive Bayes Classification∏ algorithm. As a reminder, in the Naive Bayes
-```
-algorithm we calculate p(c|f) ∝ p(f|c)p(c) = p(c) (^) i p(fi|c). In Gaussian Naive Bayes, we learn a one-
-dimensional Gaussian for each feature in each class, i .e. p(fi|c) = N(fi; μi,c, σ^2 i,c), where μi,c is the mean of
-feature fi for those instances in class c, and σi,c^2 is the variance of feature fi for instances in class c. You can ( and
-should) test your implementation locally using the x Train and y Train data provided.
 1.Training Model - Learning Class Priors [5 pts]
 Complete the function prior=function(yTrain). It returns a c × 1 vector p, where pi is the prior
 probability of class i.
+```
+```
 2.Training Model - Learning Class-Conditional Feature Probabilities [8 pts]
 Complete the function likelihood=function(xTrain, yTrain). It returns two matrices, M and V. M
 is an m × c matrix where Mi,j is the conditional mean of feature i given class j. V is an m × c
 matrix where Vi,j is the conditional variance of feature i given class j.
+```
+```
 3.Naive B ayes Classifier [ 8 pts]
 Complete the function naiveBayesClassify=function(xTest, M, V, p). It returns a vector t, which is a
 m × 1 vector of predicted class values, where ti is the predicted class for the ith row of xTest.
+```
+```
 4.Evaluation [4 pts]
 Let’s analyze the accuracy of the classifier on the test data. Create a text file evaluation.txt. Each on a
 separate line, report the evaluation metric in decimal format, to 3 decimal places.
@@ -85,14 +72,14 @@ separate line, report the evaluation metric in decimal format, to 3 decimal plac
 - Recall for class 1
 - Precision for class 5
 - Recall for class 5
-
+```
 ## 3 Logistic Regression [25 pts]
 
-```
+
 In this question you will implement the Logistic Regression algorithm. You will learn the weights using
 Gradient Descent. Once again you can test your implementation locally using the xT rain and yT rain data
 provided.
-```
+
 ```
 1.Sigmoid Probability [ 7 pts]
 Complete the function sigmoidProb = function(y, x, w), where y ∈ 0 , 1 i s a single class, x i s a single
@@ -114,6 +101,6 @@ vector. The output should be a single binary value indicating which class you pr
 Evaluate the accuracy of the classifier on the Ecoli dataset as in Question 2. Report your results in the file
 evaluation.txt, compare with the results from Question 2, and comment on the comparison.
 ```
-### 2
+
 
 
